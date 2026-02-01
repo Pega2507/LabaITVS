@@ -11,6 +11,7 @@ using namespace std;
 
 class ComplexNumber
 {
+private:
     float Real, Imaginary;
 
 
@@ -32,7 +33,7 @@ public:
         Imaginary = other.Imaginary;
     };
 
-    ~ComplexNumber() 
+    ~ComplexNumber() //destruktor
     {
         //cout << "papa" << endl;
     };
@@ -47,6 +48,7 @@ public:
         return Imaginary;
     };
 
+    //przeciazenia operatorow
 
     ComplexNumber operator +(const ComplexNumber& other) const
     {
@@ -105,7 +107,5 @@ int main()
     z4 = z4 / z2;
     cout << "A teraz wynik podzielimy przez L2: " << z4.getReal() << " + " << z4.getImaginary() << "i" << endl;
 
-    z1 = z2;
-    cout << "Teraz L1 jest L2: " << z1.getReal() << " + " << z1.getImaginary() << "i" << endl;
 
 }
