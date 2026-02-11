@@ -84,7 +84,7 @@ public:
 
 };
 
-int main()
+/*int main()
 {
     ComplexNumber z1;
     ComplexNumber z2(4.5, 6);
@@ -108,4 +108,4 @@ int main()
     cout << "A teraz wynik podzielimy przez L2: " << z4.getReal() << " + " << z4.getImaginary() << "i" << endl;
 
 
-}
+}*/
